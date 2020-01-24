@@ -1,0 +1,17 @@
+version: "3"
+services:
+  cs:
+    image: cs16ds/server:latest
+    hostname: cs
+    ports:
+     - "26900:26900/udp"
+     - "27020:27020/udp"
+     - "27015:27015/udp"
+     - "27015:27015"
+    environment:
+     - MAXPLAYERS=32
+     - SERVER_NAME= COUNTEG_STAIG
+     - START_MONEY=20000
+     - BUY_TIME=0.25
+     - FRIENDLY_FIRE=1
+     - ADMIN_STEAM=0:4:1383638332
